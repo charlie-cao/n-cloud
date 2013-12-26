@@ -10,30 +10,7 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
         <link href="http://www.bootcss.com/assets/dist/css/bootstrap.min.css"  rel="stylesheet">
-        <style>
-            body {
-                padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
-            }
-
-            .projects-header {
-                width: 60%;
-                text-align: center;
-                margin: 60px 0 10px;
-                font-weight: 200;
-                margin-bottom: 40px;
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-            }            
-            .footer {
-                color: #999;
-                text-align: center;
-                padding: 30px 0;
-                margin-top: 70px;
-                border-top: 1px solid #e5e5e5;
-                background-color: #f5f5f5;
-            }
-        </style>
+        <link href="http://www.bootcss.com/assets/css/site.min.css"  rel="stylesheet">
     </head>
     <body>
         <div class="navbar navbar-inverse navbar-fixed-top">
@@ -49,17 +26,45 @@ and open the template in the editor.
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li><a href="#">首页</a></li>
+                        <!--
                         <li><a href="#" target="_blank">投资计算器</a></li>
                         <li><a href="#" target="_blank">理财交流区</a></li>
                         <li><a href="#" target="_blank">全球大数据</a></li>
                         <li><a href="#" target="_blank">通胀</a></li>
                         <li><a href="#" target="_blank">房价</a></li>
                         <li><a href="#" target="_blank">我的资产管理</a></li>
-                        <li><a href="about.html">关于</a></li>
+                        -->
+                        <li><a href="#">关于</a></li>
                     </ul>
                 </div>
             </div>
         </div>
+
+        <div id="myCarousel" class="carousel slide">
+            <!-- Indicators 
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol> -->
+            <div class="carousel-inner">
+                <div class="item active masthead">
+                    <div class="masthead-bg"></div>
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>理财通</h1>
+                            <h2></h2>
+                            <p>
+                                <a class="btn btn-lg btn-primary btn-shadow bs3-link" href="#" target="_blank" role="button">理财计算器</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a> -->
+        </div>        
+
         <div class="container">
             <div class="projects-header page-header">
                 <h2>近期理财收益月报</h2>
@@ -139,80 +144,81 @@ and open the template in the editor.
                     </tr>
                 </tbody>
             </table>
-            家庭投资计算器，自动帮您规划投资比例，使用业界最优秀的投资计算公式。算一下该怎么理财吧。
-            <h4>有其他好的理财途径想填进去的告诉我 <a href="mailto:charlie19817@gmail.com" target="_blank"  >charlie19817@gmail.com</a></h4>
-            理财通 客户端 通全球
-            <div>
-                今年中国预期通胀8%，往年通胀12%。美国预期通胀，往年通胀。 其他国家投资收益率。
 
-                什么狗屎环比同比， 全球各大城市房价与收入比 每月发布。
 
+
+        </div>
+        <div class="container projects">
+            <div class="projects-header page-header">
+                <h2>更多的理财工具</h2>
+                <p>简化理财</p>
             </div>
-            
-<div class="row">
+            <div class="row">
 
-        <div class="col-sm-6 col-md-4 ">
-          <div class="thumbnail">
-            <a href="/p/headroom.js/" title="Headroom.js 是一个轻量级、纯 JS 组件，用来隐藏或展现页面上的元素，为你的页面留下更多展示内容的空间。" target="_blank" onclick="_hmt.push(['_trackEvent', 'tile', 'click', 'headroom'])">
-                <img class="lazy" src="http://www.bootcss.com/assets/img/headroom.png" width="300" height="150" data-src="assets/img/headroom.png" alt="Headroom.js" data-pinit="registered"></a>
-            <div class="caption">
-              <h3> 
-                <a href="/p/headroom.js/" title="Headroom.js 是一个轻量级、纯 JS 组件，用来隐藏或展现页面上的元素，为你的页面留下更多展示内容的空间。" target="_blank" onclick="_hmt.push(['_trackEvent', 'tile', 'click', 'headroom'])">Headroom.js<br><small>隐藏或展示页面元素</small></a>
-              </h3>
-              <p>
-              Headroom.js 是一个轻量级、纯 JavaScript 组件，用来隐藏或展现页面上的元素，为你的页面留下更多展示内容的空间。
-              </p>
-            </div>
-          </div>
+                <div class="col-sm-6 col-md-4 ">
+                    <div class="thumbnail">
+                        <a href="/p/headroom.js/" title="" target="_blank" onclick="_hmt.push(['_trackEvent', 'tile', 'click', 'headroom'])">
+                            <img class="lazy" src="http://www.bootcss.com/assets/img/headroom.png" width="300" height="150" data-src="assets/img/headroom.png" alt="Headroom.js" data-pinit="registered"></a>
+                        <div class="caption">
+                            <h3> 
+                                <a href="/p/headroom.js/" title="Headroom.js 是一个轻量级、纯 JS 组件，用来隐藏或展现页面上的元素，为你的页面留下更多展示内容的空间。" target="_blank" onclick="_hmt.push(['_trackEvent', 'tile', 'click', 'headroom'])">家庭投资计算器<br><small>自动帮您规划投资比例</small></a>
+                            </h3>
+                            <p>
+                                自动帮您规划投资比例，使用业界最优秀的投资计算公式。算一下该怎么理财吧。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 ">
+                    <div class="thumbnail">
+                        <a href="#" title="" target="_blank" onclick="_hmt.push(['_trackEvent', 'tile', 'click', 'opencdn'])"><img class="lazy" src="http://www.bootcss.com/assets/img/headroom.png" width="300" height="150" data-src="assets/img/opencdn.png" alt="Open CDN" data-pinit="registered"></a>
+                        <div class="caption">
+                            <h3> 
+                                <a href="#" title="" target="_blank" onclick="_hmt.push(['_trackEvent', 'tile', 'click', 'opencdn'])">理财通<br><small>全球化的理财工具</small></a>
+                            </h3>
+                            <p>全球化的理财工具
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 ">
+                    <div class="thumbnail">
+                        <a href="/p/stickup/" title="stickUp能让页面目标元素“固定”在浏览器窗口的顶部" target="_blank" onclick="_hmt.push(['_trackEvent', 'tile', 'click', 'stickup'])"><img class="lazy" src="http://www.bootcss.com/assets/img/headroom.png" width="300" height="150" data-src="assets/img/stickup.png" alt="stickUp" data-pinit="registered"></a>
+                        <div class="caption">
+                            <h3> 
+                                <a href="/p/stickup/" title="stickUp能让页面目标元素“固定”在浏览器窗口的顶部" target="_blank" onclick="_hmt.push(['_trackEvent', 'tile', 'click', 'stickup'])">全球财务大数据<br><small>真实的数据，了解您资产的价值</small></a>
+                            </h3>
+                            <p>
+                                今年中国预期通胀8%，往年通胀12%。美国预期通胀，往年通胀。 其他国家投资收益率。 什么狗屎环比同比， 全球各大城市房价与收入比 每月发布。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 ">
+                    <div class="thumbnail">
+                        <a href="/p/lesscss/" title="LESS一种动态样式语言" target="_blank" onclick="_hmt.push(['_trackEvent', 'tile', 'click', 'lesscss'])"><img class="lazy" src="http://www.bootcss.com/assets/img/headroom.png" width="300" height="150" data-src="assets/img/lesscss.png" alt="LESSCSS" data-pinit="registered"></a>
+                        <div class="caption">
+                            <h3> 
+                                <a href="/p/lesscss/" title="Grunt是基于Node.js的项目构建工具。" target="_blank" onclick="_hmt.push(['_trackEvent', 'tile', 'click', 'lesscss'])">LESS<br><small>一种动态样式语言</small></a>
+                            </h3>
+                            <p>
+                                理财通 客户端 通全球
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>          
         </div>
 
-        <div class="col-sm-6 col-md-4 ">
-          <div class="thumbnail">
-            <a href="http://open.bootcss.com/" title="Bootstrap中文网开放CDN服务" target="_blank" onclick="_hmt.push(['_trackEvent', 'tile', 'click', 'opencdn'])"><img class="lazy" src="http://www.bootcss.com/assets/img/headroom.png" width="300" height="150" data-src="assets/img/opencdn.png" alt="Open CDN" data-pinit="registered"></a>
-            <div class="caption">
-              <h3> 
-                <a href="http://open.bootcss.com/" title="Bootstrap中文网开放CDN服务" target="_blank" onclick="_hmt.push(['_trackEvent', 'tile', 'click', 'opencdn'])">Open CDN<br><small>开放CDN服务</small></a>
-              </h3>
-              <p>Bootstrap中文网联合又拍云存储共同推出了开放CDN服务，我们对广泛的前端开源库提供了稳定的存储和带宽的支持，例如Bootstrap、jQuery等。
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-6 col-md-4 ">
-          <div class="thumbnail">
-            <a href="/p/stickup/" title="stickUp能让页面目标元素“固定”在浏览器窗口的顶部" target="_blank" onclick="_hmt.push(['_trackEvent', 'tile', 'click', 'stickup'])"><img class="lazy" src="http://www.bootcss.com/assets/img/headroom.png" width="300" height="150" data-src="assets/img/stickup.png" alt="stickUp" data-pinit="registered"></a>
-            <div class="caption">
-              <h3> 
-                <a href="/p/stickup/" title="stickUp能让页面目标元素“固定”在浏览器窗口的顶部" target="_blank" onclick="_hmt.push(['_trackEvent', 'tile', 'click', 'stickup'])">stickUp<br><small>让页面元素“固定”位置</small></a>
-              </h3>
-              <p>
-              stickUp能让页面目标元素“固定”在浏览器窗口的顶部，即便页面在滚动，目标元素仍然能出现在设定的位置。
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-6 col-md-4 ">
-          <div class="thumbnail">
-            <a href="/p/lesscss/" title="LESS一种动态样式语言" target="_blank" onclick="_hmt.push(['_trackEvent', 'tile', 'click', 'lesscss'])"><img class="lazy" src="http://www.bootcss.com/assets/img/headroom.png" width="300" height="150" data-src="assets/img/lesscss.png" alt="LESSCSS" data-pinit="registered"></a>
-            <div class="caption">
-              <h3> 
-                <a href="/p/lesscss/" title="Grunt是基于Node.js的项目构建工具。" target="_blank" onclick="_hmt.push(['_trackEvent', 'tile', 'click', 'lesscss'])">LESS<br><small>一种动态样式语言</small></a>
-              </h3>
-              <p>
-              LESS为CSS赋予了动态语言的特性，如变量、继承、运算、函数。LESS既可以在客户端上运行 (支持IE 6+、Webkit、Firefox)，也可以借助Node.js或者Rhino在服务端运行。
-              </p>
-            </div>
-          </div>
-        </div>
-
-
-
-</div>            
-        </div>        
         <footer class="footer ">
             <p>本站所有信息均来自网络，投资者请自行判断。投资有风险入行需谨慎。</p>
+            有其他好的理财途径想填进去的告诉我 <a href="mailto:charlie19817@gmail.com" target="_blank"  >charlie19817@gmail.com</a>
             <p>Powered By <a href="http://n.app-net.org/" target="_blank" title="PPLBOY">N+开发组</a></p>
             <p>
                 <a href="http://www.miibeian.gov.cn/" target="_blank">京ICP备8888888号</a>

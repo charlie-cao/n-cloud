@@ -50,20 +50,26 @@ and open the template in the editor.
                 var map = new BMap.Map("container");          // 创建地图实例  
                 var point = new BMap.Point(116.404, 39.915);  // 创建点坐标  
                 map.centerAndZoom(point, 15);                 // 初始化地图，设置中心点坐标和地图级别  
-            var geolocation = new BMap.Geolocation();
-            
-geolocation.getCurrentPosition(function(r){
-    if(this.getStatus() == BMAP_STATUS_SUCCESS){
-        var mk = new BMap.Marker(r.point);
-        map.addOverlay(mk);
-        map.panTo(r.point);
-        alert('您的位置：'+r.point.lng+','+r.point.lat);
-    }
-    else {
-        alert('failed'+this.getStatus());
-    }        
-},{enableHighAccuracy: true})
-            
+                var geolocation = new BMap.Geolocation();
+
+
+                var lng = 0;
+                var lat = 0;
+                geolocation.getCurrentPosition(function(r) {
+                    if (this.getStatus() == BMAP_STATUS_SUCCESS) {
+                        var mk = new BMap.Marker(r.point);
+                        map.addOverlay(mk);
+                        map.panTo(r.point);
+                        lng = r.point.lng;
+                        lat = r.point.lat;
+
+//        alert('您的位置：'+r.point.lng+','+r.point.lat);
+                    }
+                    else {
+                        alert('failed' + this.getStatus());
+                    }
+                }, {enableHighAccuracy: true})
+
             </script>  
             <button id="needhelp" type="button" class="btn btn-large btn-block btn-primary" style="padding: 20px;">我需要帮助</button>
         </div>        
@@ -82,11 +88,11 @@ geolocation.getCurrentPosition(function(r){
                         <h4 class="modal-title" id="myModalLabel">您的求助内容</h4>
                     </div>
                     <div class="modal-body">
-                        <textarea class="form-control" rows="3"></textarea>
+                        <textarea id="SOSMSG" class="form-control" rows="3"></textarea>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">保存草稿</button>
-                        <button type="button" class="btn btn-primary">发布求助</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">取消发布</button>
+                        <button type="button" class="btn btn-primary" id="sendSOS">发布求助</button>
                     </div>
                 </div><!-- /.modal-content -->
             </div><!-- /.modal-dialog -->
@@ -97,6 +103,11 @@ geolocation.getCurrentPosition(function(r){
         <script>
                 $("#needhelp").click(function() {
                     $('#myModal').modal();
+                    $("#sendSOS").click(function() {
+                        alert(lng);
+                        alert(lat);
+                        alert($("#SOSMSG").val());
+                    });
                 });
         </script>
     </body>
